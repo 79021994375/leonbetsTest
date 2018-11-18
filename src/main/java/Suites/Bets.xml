@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Leonbets - Bets" parallel="tests" thread-count="1">
+
+    <test name="Single Bet Test">
+        <classes>
+            <class name="Tests.SingleBetTest"/>
+        </classes>
+    </test>
+    <test name="Express Bet Test">
+        <classes>
+            <class name="Tests.ExpressBetTest"/>
+        </classes>
+    </test>
+    <test name="System Bet Test">
+        <classes>
+            <class name="Tests.SystemBetTest"/>
+        </classes>
+    </test>
+</suite>
