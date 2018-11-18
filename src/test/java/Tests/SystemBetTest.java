@@ -21,14 +21,14 @@ public class SystemBetTest {
         WebDriver driver = new ChromeDriver();
 
         //Открыть главную страницу
-        driver.get("https://leonbets-rc.dev.leoncorp.net/?lang=en-US");
+        driver.get("https://leonbets.net/?lang=en-US");
 
         //Войти в систему тестовым пользователем
         Login login = new Login(driver);
-        login.makeLogin("91030349", "1234567q");
+        login.makeLogin("73008469", "1234567q");
 
         //Перейти в раздел "Ставки Live"
-        driver.get("https://leonbets-rc.dev.leoncorp.net/bet24");
+        driver.get("https://leonbets.net/bet24");
 
         //Выбрать два любых коэффицента, далее ввести сумму 10 и сделать ставку
         Bets bets = new Bets(driver);
